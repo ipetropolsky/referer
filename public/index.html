@@ -5,17 +5,35 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .promo-link {
-            margin-top: 50px;
+            display: block;
+            padding: 75px 0;
             text-align: center;
+        }
+        .promo-link_invisible {
+            background: #212426;
+        }
+        .logo {
+            width: 30%;
         }
     </style>
 </head>
 <body>
-    <div class="promo-link">
-        <a href="https://go.acstat.com/8a3b387d0ec48df0" title="Skillbox">
-            <img width="30%" src="logo/skillbox.svg" />
+    <div>
+        <a class="promo-link"
+           href="https://go.acstat.com/8a3b387d0ec48df0"
+           title="Skillbox">
+            <img class="logo" src="logo/skillbox.svg" />
+        </a>
+    </div>
+    <div>
+        <a class="promo-link promo-link_invisible"
+           href="https://www.invisible.ru/i/ipetropolsky"
+           title="Invisible">
+            <img class="logo" src="logo/invisible.svg" />
         </a>
     </div>
 </body>
