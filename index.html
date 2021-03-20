@@ -15,7 +15,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            box-shadow: 0 0 30vw rgba(0,0,0,0.3) inset;
+            box-shadow: 0 0 30vw rgba(0,0,0,0.2) inset;
             pointer-events: none;
         }
         .promo-link {
@@ -34,6 +34,22 @@
         .promo-link_tinkoff {
             background: #ffffff;
         }
+        .promo-link_uchi-ru {
+            background: #ffffff;
+        }
+        .promo-link_uchi-ru::after {
+            position: absolute;
+            bottom: -24px;
+            right: 32px;
+            content: "";
+            width: 40px;
+            height: 20px;
+            background-image: url(logo/uchi-ru-dino.svg);
+            transition: bottom 250ms ease-in-out 0s;
+        }
+        .promo-link_uchi-ru:hover::after {
+            bottom: -4px;
+        }
         .logo {
             height: 100%;
             max-width: 50%;
@@ -46,10 +62,10 @@
 </head>
 <body>
     <div>
-        <a class="promo-link"
-           href="https://go.acstat.com/8a3b387d0ec48df0"
-           title="Skillbox">
-            <img class="logo" src="logo/skillbox.svg" />
+        <a class="promo-link promo-link_tinkoff"
+           href="https://www.tinkoff.ru/sl/APYt8dMyNXh"
+           title="Тинькофф">
+            <img class="logo" src="logo/tinkoff.svg" />
         </a>
     </div>
     <div>
@@ -60,6 +76,13 @@
         </a>
     </div>
     <div>
+        <a class="promo-link promo-link_uchi-ru"
+           href="https://uchi.ru/referral/24716281"
+           title="Учи.Ру">
+            <img class="logo" src="logo/uchi-ru.svg" />
+        </a>
+    </div>
+    <div>
         <a class="promo-link promo-link_alfabank"
            href="https://alfa.me/JL0rfw"
            title="Альфа-Банк">
@@ -67,10 +90,10 @@
         </a>
     </div>
     <div>
-        <a class="promo-link promo-link_tinkoff"
-           href="https://www.tinkoff.ru/sl/APYt8dMyNXh"
-           title="Тинькофф">
-            <img class="logo" src="logo/tinkoff.svg" />
+        <a class="promo-link"
+           href="https://go.acstat.com/8a3b387d0ec48df0"
+           title="Skillbox">
+            <img class="logo" src="logo/skillbox.svg" />
         </a>
     </div>
     <div class="vignette"></div>
